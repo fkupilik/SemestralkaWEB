@@ -1,0 +1,199 @@
+@CHARSET "UTF-8";
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+
+a{
+	color:white;
+}
+
+a:link {
+    color: white;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+    color: white;
+}
+body{
+	background-image: url("../css/sphericalcow5.png");
+}
+
+h1{
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+
+.header {
+    background-color: rgba(255,255,255, 0.3) ;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.menu ul {
+	height: 700px;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+.menu li {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 4px;
+}
+
+.menu li a{
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 8px 0px;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+table{
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+	padding: 5px;
+	border-spacing: 15px;
+}
+
+.tabulkaPrispevky table{
+	padding: 5px;
+	border-spacing: 5px;
+	text-align: center;
+}
+.tabulkaPrispevky th, td {
+    text-align: center;
+    padding: 4px;
+}
+
+.tabulkaPrispevky td{
+	background-color: rgba(255,255,255, 0.3) ;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+.tabulkaPrispevky th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tabulkaPrispevky input[type=submit] {
+    background-color: #ffffff;
+    font-size: 15px;
+    color: black;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tabulkaPrispevky input[type=submit]:hover {
+    background-color: #0099cc;
+}
+
+input[type=text], input[type=password], input[type=email] {
+	width: 400px;
+    padding: 12px 10px;
+    margin: 5px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[name="abstract"]{
+	width: 400px;
+	height: 200px;
+    padding: 12px 10px;
+    margin: 5px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+input[type=submit] {
+    background-color: #ffffff;
+    font-size: 15px;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0099cc;
+}
+
+.formular {
+    border-radius: 5px;
+    padding: 0px;
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
